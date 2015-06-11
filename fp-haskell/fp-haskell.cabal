@@ -15,9 +15,11 @@ Library
   HS-Source-Dirs:       src
   GHC-Options:          -Wall
   Exposed-Modules:      Fp.Haskell
+                        Fp.InfiniteStream
   Other-Modules:        Fp.Haskell.Internal
   Build-Depends:        base >= 4 && < 5
                       , memoize
+                      , random
 
 Test-Suite spec
   Type:                 exitcode-stdio-1.0
@@ -29,6 +31,7 @@ Test-Suite spec
   Build-Depends:        base
                       , hspec
                       , memoize
+                      , random
 
 Source-Repository head
   Type:                 git
