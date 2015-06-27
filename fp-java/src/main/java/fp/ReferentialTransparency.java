@@ -41,7 +41,7 @@ public class ReferentialTransparency {
         zipper = (ticket, prize) -> ticket + "-" + prize;
 
         // Pay attention: I need to create a copy of the list to sort it.
-        lottery = (tickets, prizes) -> zip(sortedCopy(tickets).stream(), sortedCopy(prizes).stream(), zipper);
+            lottery = (tickets, prizes) -> zip(sortedCopy(tickets).stream(), sortedCopy(prizes).stream(), zipper);
 
         winner = (lottery, tickets, prizes) -> lottery.apply(tickets, prizes);
 
